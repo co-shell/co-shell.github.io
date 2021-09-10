@@ -1,0 +1,290 @@
+html {
+  font-size: 16px;
+}
+body {
+  background: linear-gradient(0deg, #19221a, #19292e);
+  overflow-x: hidden;
+  margin: 0;
+}
+body header {
+  padding: 1rem;
+}
+.f {
+  display: flex;
+}
+.fc {
+  flex-direction: column;
+}
+.ac {
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jsc {
+  justify-self: center;
+}
+.f1 {
+  flex: 1;
+}
+h1,
+.h1 {
+  font-size: 3rem;
+}
+p {
+  line-height: 1.7;
+  font-size: 1.4rem;
+}
+* {
+  --font1: "Play";
+  font-family: 'Source Code Pro', monospace;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+input,
+button {
+  font-size: 1.2rem;
+}
+input {
+  background: #2a4632;
+  padding: 0 0 0 1rem;
+  border: 0;
+}
+input::placeholder {
+  color: rgba(255,255,255,0.749);
+}
+button {
+  border: 0;
+  background: #4d879d;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+form {
+  margin: 0 auto;
+  width: 320px;
+}
+form input {
+  flex: 1;
+}
+form > * {
+  height: 62px;
+  color: #fff;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+@media (min-width: 960px) {
+  ul {
+    flex-direction: row;
+  }
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font1);
+}
+h1 {
+  margin: 0;
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 3rem;
+}
+svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+svg#bg {
+  z-index: -4;
+  pointer-events: none;
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  transform: scale(8.5);
+  opacity: 0.15;
+  height: 200px;
+}
+header {
+  position: absolute;
+}
+header svg {
+  position: absolute;
+  width: 160px;
+  height: auto;
+}
+section {
+  position: relative;
+}
+section#hero {
+  padding: 4rem 2rem 3rem;
+}
+section#hero:before {
+  z-index: -5;
+  position: absolute;
+  background: radial-gradient(circle at 50% 100%, #15351b 30%, #0e1510);
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+section#hero hgroup {
+  text-align: center;
+  max-width: 600px;
+  margin: 3rem 0 1rem;
+  color: #fff;
+}
+section#hero svg {
+  box-shadow: 0px 0px 120px -10px rgba(0,0,0,0.24);
+  max-width: 1280px;
+  height: auto;
+  width: 100%;
+  z-index: -3;
+}
+section#hero small {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.541);
+  margin: 0 0 1rem;
+}
+section#hero form {
+  margin: 0 0 3rem;
+}
+section#desc:before {
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(0deg, #122528, #1b231e);
+  z-index: -3;
+  clip-path: ellipse(4000px 100% at 50% 100%);
+  content: '';
+  top: -4rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+section#desc .container {
+  padding: 4rem 2rem 0;
+}
+@media (min-width: desktop) {
+  section#desc .container {
+    padding: 0 2rem;
+  }
+}
+section#desc .container hgroup {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto;
+  color: #fff;
+}
+section#desc .container hgroup h2 {
+  margin: 0;
+}
+section#desc .container hgroup p {
+  margin: 0.5rem 0 1.5rem;
+}
+section#desc .container ul li {
+  padding: 1rem;
+}
+section#desc .container ul li .inner {
+  padding: 1rem;
+  border-radius: 6px;
+  background: #2b3739;
+  border-top: 3px solid #70b47d;
+  box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.18);
+}
+section#desc .container ul li h3 {
+  color: #fff;
+  margin: 0.75rem 0 1rem;
+}
+section#desc .container ul li p {
+  font-size: 1rem;
+  color: #b9c9cd;
+}
+section#desc .container #desc-svg {
+  padding: 4rem 0 0 0;
+  position: relative;
+  z-index: -2;
+  height: 520px;
+}
+@media (min-width: 960px) {
+  section#desc .container #desc-svg {
+    height: 680px;
+  }
+}
+section#desc .container #desc-svg svg {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #43575b;
+  box-shadow: 0px 30px 30px #121b1c;
+}
+@media (min-width: 960px) {
+  section#desc .container #desc-svg svg {
+    width: 1520px;
+  }
+}
+section#extended {
+  --bg: #75997c;
+  position: relative;
+}
+@media (min-width: 960px) {
+  section#extended {
+    height: 550px;
+  }
+}
+section#extended hgroup h2 {
+  max-width: 510px;
+}
+section#extended:before {
+  background: var(--bg);
+  content: '';
+  top: -5rem;
+  left: 0;
+  right: 0;
+  bottom: -5rem;
+  transform: skewY(-2deg);
+  position: absolute;
+  z-index: -1;
+}
+section#extended ul li p {
+  font-size: 1rem;
+}
+section#email {
+  margin: 13rem auto 6rem;
+}
+section#email hgroup {
+  color: #fff;
+}
+footer {
+  background: #121c15;
+  padding: 1rem;
+}
+footer svg {
+  width: 150px;
+}
+footer #footer-btm {
+  margin: 0.5rem 0 0 0;
+  color: rgba(255,255,255,0.502);
+}
