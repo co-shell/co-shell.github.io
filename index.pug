@@ -2,30 +2,28 @@ html
     head
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1')
-        title A Basic HTML5 Template
-        meta(name='description' content='A simple HTML5 Template for new projects.')
-        meta(name='author' content='SitePoint')
-        meta(property='og:title' content='A Basic HTML5 Template')
+        title Coshell
+        meta(name='description' content='Coshell: A tool for thinking about and editing Rust code')
+        meta(property='og:title' content='Coshell')
         meta(property='og:type' content='website')
-        meta(property='og:url' content='https://www.sitepoint.com/a-basic-html5-template/')
-        meta(property='og:description' content='A simple HTML5 Template for new projects.')
+        meta(property='og:url' content='https://coshell.dev')
+        meta(property='og:description' content='Coshell: A tool for thinking about and editing Rust code')
         meta(property='og:image' content='image.png')
-        link(rel='icon' href='/favicon.ico')
-        link(rel='icon' href='/favicon.svg' type='image/svg+xml')
-        link(rel='apple-touch-icon' href='/apple-touch-icon.png')
+        link(rel='icon' href='/assets/favicon.svg' type='image/svg+xml')
         link(rel='stylesheet' href='./styles.css')
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">  
     //- script(src='js/scripts.js')
     body.f.fc
         header 
             include ./assets/logo.svg
         section#hero.f.jcc.fc.ac.r
             hgroup
-                h1 A Rust IDE that thinks like you do.
-                p Kill linear file layouts with an IDE for that improves your productivity.
+                h1 Coshell
+                p A tool for thinking about and editing Rust code
             small Join the waitlist
             form.f
                 input(placeholder="Your Email")
@@ -88,45 +86,47 @@ html
         section#desc.f.jcc.fc.ac
             .container.f.fc
                 hgroup 
-                    h2 This is what it does
-                    p Usmod tempor incididunt ut labore ee.
+                    h1 Not an IDE
+                    p Interact with code the way we will a century from now.
                 ul.f
                     li 
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            h3 Show code in context
+                            p Navigate your code through the relationships in the code itself, rather than through the layout of the filesystem or the linear order of definitions in a file.
                     li 
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    li 
+                            h3 Made for Rust
+                            p Rust's tight tooling ecosystem and strong type system lend themselves to features that are hard or impossible to replicate for other languages.
+               
+                                
+                    li
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            h3 Stop managing editor tabs
+                            p Window management and file management are distracting bookkeeping that sap attention and working memory from more important things.
                 #desc-svg
                     include ./assets/home.svg
         section#extended.f.jcc.fc.ac
             .container
                 hgroup 
-                    h2.h1 Maybe an animation, or something.
-                    p Viverra adipiscing at in tellus integer feugiat scelerisque. Fermentum et sollicitudin ac orci phasellus egestas tellus. Nunc sed augue lacus viverra vitae congue eu consequat. Id nibh tortor id aliquet. Sit amet dictum sit amet.
+                    h2.h1 A tool that reinforces and sustains flow state
+                    p Today's editors and IDEs are designed to optimize the task of manipulating bytes in a file.<br>Coshell is designed to optimize developer flow state.
                 ul.f
                     li 
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            h3 Keyboard only
+                            p No clicking, no dragging. We take the best keyboard interaction ideas of the past three decades and put them front and center.
                     li 
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            h3 No invisible buffers
+                            p Your clipboard contents are visible. Your last cursor position is visible. Your undo history is visible. If Coshell knows about, it you can see it and interact with it.
                     li 
                         .inner
-                            h3 Some title
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            h3 Different UIs for different goals
+                            p Writing new code, understanding existing code and refactoring are all different activities. Coshell shows what is useful for the task at hand, and hides everything that isn't.
         section#email.f.jcc.fc.ac
             .container
                 hgroup 
-                    h2.h1 Let's get your email
+                    h2.h1 Sign up for updates
                 form.f
                     input(placeholder="Your Email")
                     button Submit
