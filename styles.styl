@@ -82,7 +82,7 @@ h1
 h2
     font-size 1.4rem
 
-svg
+svg,img
     width 100%
     height auto
     overflow visible
@@ -118,12 +118,15 @@ section
             max-width 720px
             margin 3rem 0 1rem
             color white
-        svg
+        svg#main,img#main
             box-shadow 0px 0px 120px -10px rgba(0 0 0 24%)
             max-width 1280px
             height: auto;
             width 100%
             z-index: -3
+            border-radius: 8px;
+            border: 2px solid #43575b;
+            box-shadow: 0px 30px 30px #121b1c;
         small
             font-size: 1.2rem;
             color: #ffffff8a; 
@@ -177,7 +180,7 @@ section
                 height 520px
                 @media (min-width 960px)
                     height: 680px
-                svg 
+                svg,img#secondary
                     @media (min-width 960px)
                         width: 1520px;
                         // max-width: 100%
