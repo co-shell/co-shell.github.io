@@ -116,12 +116,14 @@ h1 {
 h2 {
   font-size: 1.4rem;
 }
-svg {
+svg,
+img {
   width: 100%;
   height: auto;
   overflow: visible;
 }
-svg#bg {
+svg#bg,
+img#bg {
   z-index: -4;
   pointer-events: none;
   position: absolute;
@@ -252,7 +254,7 @@ section#desc .container #desc-svg {
     height: 680px;
   }
 }
-section#desc .container #desc-svg svg {
+section#desc .container #desc-svg #secondary {
   position: absolute;
   overflow: hidden;
   border-radius: 8px;
@@ -260,12 +262,12 @@ section#desc .container #desc-svg svg {
   box-shadow: 0px 30px 30px #121b1c;
 }
 @media (min-width: 960px) {
-  section#desc .container #desc-svg svg {
+  section#desc .container #desc-svg #secondary {
     width: 1300px;
   }
 }
 @media (min-width: 1520px) {
-  section#desc .container #desc-svg svg {
+  section#desc .container #desc-svg #secondary {
     width: 1420px;
   }
 }
@@ -316,17 +318,6 @@ section#email {
 }
 section#email hgroup {
   color: #fff;
-}
-footer {
-  background: #121c15;
-  padding: 1rem;
-}
-footer svg {
-  width: 150px;
-}
-footer #footer-btm {
-  margin: 0.5rem 0 0 0;
-  color: rgba(255,255,255,0.502);
 }
 footer {
   background: #121c15;
