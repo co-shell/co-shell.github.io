@@ -51,7 +51,7 @@ button {
 }
 input {
   background: #2a4632;
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 2rem;
   border: 0;
 }
 input::placeholder {
@@ -60,14 +60,17 @@ input::placeholder {
 button {
   border: 0;
   background: #4d879d;
-  padding: 0 1rem;
+  padding: 0 2rem;
   cursor: pointer;
 }
 form {
+  border-radius: 8px;
+  overflow: hidden;
   margin: 0 auto;
-  width: 320px;
+  width: 350px;
 }
 form input {
+  background: #566b5c;
   flex: 1;
 }
 form > * {
@@ -125,7 +128,7 @@ svg#bg {
   align-self: center;
   width: 100%;
   transform: scale(8.5);
-  opacity: 0.15;
+  opacity: 0.1;
   height: 200px;
 }
 header {
@@ -140,12 +143,17 @@ section {
   position: relative;
 }
 section#hero {
-  padding: 4rem 2rem 3rem;
+  padding: 4rem 2rem 10rem;
+}
+@media (min-width: 968px) {
+  section#hero {
+    padding: 4rem 2rem 3rem;
+  }
 }
 section#hero:before {
   z-index: -5;
   position: absolute;
-  background: radial-gradient(circle at 50% 100%, #15351b 30%, #0e1510);
+  background: radial-gradient(circle at 50% 100%, #3b5440 30%, #082020);
   content: "";
   width: 100%;
   height: 100%;
@@ -157,12 +165,23 @@ section#hero hgroup {
   margin: 3rem 0 1rem;
   color: #fff;
 }
-section#hero svg {
-  box-shadow: 0px 0px 120px -10px rgba(0,0,0,0.24);
+section#hero #graphic {
+  box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.29);
   max-width: 1280px;
   height: auto;
-  width: 100%;
+  width: 90vw;
   z-index: -3;
+  margin: 0 0 -4rem;
+  z-index: -3;
+  border-radius: 16px;
+  margin: 0 0 -4rem;
+  overflow: hidden;
+  border: 2px solid #385557;
+}
+@media (min-width: 968px) {
+  section#hero #graphic {
+    box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.79);
+  }
 }
 section#hero small {
   font-size: 1.2rem;
@@ -175,7 +194,7 @@ section#hero form {
 section#desc:before {
   position: absolute;
   pointer-events: none;
-  background: linear-gradient(0deg, #122528, #1b231e);
+  background: linear-gradient(0deg, #42686e, #314141);
   z-index: -3;
   clip-path: ellipse(4000px 100% at 50% 100%);
   content: '';
@@ -208,9 +227,9 @@ section#desc .container ul li {
   padding: 1rem;
 }
 section#desc .container ul li .inner {
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 6px;
-  background: #2b3739;
+  background: #516a6e;
   border-top: 3px solid #70b47d;
   box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.18);
 }
@@ -223,7 +242,7 @@ section#desc .container ul li p {
   color: #b9c9cd;
 }
 section#desc .container #desc-svg {
-  padding: 4rem 0 0 0;
+  padding: 4rem 0 0 1rem;
   position: relative;
   z-index: -2;
   height: 520px;
@@ -242,7 +261,12 @@ section#desc .container #desc-svg svg {
 }
 @media (min-width: 960px) {
   section#desc .container #desc-svg svg {
-    width: 1520px;
+    width: 1300px;
+  }
+}
+@media (min-width: 1520px) {
+  section#desc .container #desc-svg svg {
+    width: 1420px;
   }
 }
 section#extended {
@@ -251,31 +275,44 @@ section#extended {
 }
 @media (min-width: 960px) {
   section#extended {
-    height: 550px;
+    height: 440px;
   }
 }
+section#extended hgroup {
+  text-align: center;
+}
 section#extended hgroup h2 {
+  margin: 0 auto;
   max-width: 510px;
 }
 section#extended:before {
-  background: var(--bg);
-  content: '';
-  top: -5rem;
-  left: 0;
-  right: 0;
-  bottom: -5rem;
-  transform: skewY(-2deg);
   position: absolute;
+  pointer-events: none;
+  background: linear-gradient(0deg, #74997b, #88bc9b);
+  z-index: -3;
+  clip-path: ellipse(3000px 100% at 50% 100%);
+  content: '';
+  top: -7rem;
+  bottom: 4rem;
+  right: 0;
+  left: 0;
   z-index: -1;
 }
+section#extended ul {
+  margin: 3rem 0 0;
+}
 section#extended ul li {
-  margin: 0.5rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #88ab96;
+  border-radius: 12px;
+  border-top: 3px solid #a1beca;
 }
 section#extended ul li p {
   font-size: 1rem;
 }
 section#email {
-  margin: 13rem auto 6rem;
+  margin: 4rem auto 6rem;
 }
 section#email hgroup {
   color: #fff;
