@@ -328,3 +328,14 @@ footer #footer-btm {
   margin: 0.5rem 0 0 0;
   color: rgba(255,255,255,0.502);
 }
+footer {
+  background: #121c15;
+  padding: 1rem;
+}
+footer svg {
+  width: 150px;
+}
+footer #footer-btm {
+  margin: 0.5rem 0 0 0;
+  color: rgba(255,255,255,0.502);
+}
